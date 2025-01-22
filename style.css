@@ -1,0 +1,93 @@
+body {
+    font-family: "Poppins", serif;
+    font-style: normal;
+    background-color: black;
+    color: white;
+}
+
+.main_login_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+}
+
+.login_container_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    position: absolute;
+}
+
+.login_container_flex>button,
+.login_container_flex>input {
+    height: 23px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.login_container_flex>button {
+    background: linear-gradient(to right, rgb(233, 26, 26), rgb(255, 255, 2));
+    color: white;
+}
+
+.login_container_flex>input {
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+
+.login_container_flex>input::placeholder {
+    color: white;
+}
+
+.login_container_flex>div {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.login_container_flex>div>a {
+    font-size: smaller;
+    text-decoration: none;
+    color: white;
+}
+
+.circle1 {
+    width: 450px;
+    height: 450px;
+    border-color: red;
+    border-style: solid;
+    border-radius: 100% 75% 100% 100%;
+}
+
+.circle2 {
+    width: 450px;
+    height: 450px;
+    border-color: green;
+    border-style: solid;
+    border-radius: 100% 100% 75% 100%;
+}
+
+.circle3 {
+    width: 450px;
+    height: 450px;
+    border-color: yellow;
+    border-style: solid;
+    border-radius: 100% 100% 100% 75%;
+}
+
+.animation {
+    animation: circle-rotation 20s ease 0s infinite forwards;
+    will-change: transform;
+}
+
+@keyframes circle-rotation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
